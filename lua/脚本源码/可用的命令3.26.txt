@@ -1,0 +1,125 @@
+全局变量：
+matrix[]
+本人信息=
+{
+	出刀,
+	哈希,
+	振刀,
+	招式,
+	武器,--当前手持武器id
+	武器类型,
+	武器槽,
+	状态,
+	僵直时间,
+	角色,
+	蓄力,
+	当前怒气,
+    最大怒气,
+    当前血量,
+    最大血量,
+    当前护甲,
+    最大护甲,
+    当前精力,
+    最大精力,
+    精力消耗,
+	武器栏AID,
+	武器栏A当前耐久,
+    武器栏A最大耐久,
+	武器栏BID,
+	武器栏B当前耐久,
+    武器栏B最大耐久,
+	x,
+    y,
+    z,
+	pitch,
+    yaw,
+    roll,
+    姓名,
+	技能 = 
+	{
+		[]=
+		{
+			CD,
+			状态,
+			ID
+		}
+	},
+	延迟
+}
+玩家信息[]=
+{
+	地址,头部,姓名,招式,出刀,哈希,振刀,是人机,武器,武器类型,状态,僵直时间,角色,蓄力,
+	队伍,
+	当前怒气,
+    最大怒气,          
+    当前血量,
+    最大血量,
+    当前护甲,
+    最大护甲,
+    当前精力,
+    最大精力,
+    精力消耗,x,
+    y,
+    z,
+	pitch,
+    yaw,
+    roll
+}
+方法：例子 :ui.getw()
+ui=
+{
+--菜单
+getw()
+geth()
+Begin(str)
+End()
+SetWindowPos(x,y)
+BeginTabBar(str)
+EndTabBar()
+BeginTabItem(str)
+EndTabItem()
+Spacing()
+Button(str,x,y)
+Checkbox(str,curvalue)
+SameLine()
+Separator()
+Text(str)
+SliderFloat(const char* label, float v, float v_min, float v_max, const char* format, ImGuiSliderFlags flags)
+SliderInt(const char* label, int v, int v_min, int v_max, const char* format, ImGuiSliderFlags flags)
+Combo("str",索引,{"选项1","选项2"})
+--下面是绘制
+DrawLine(ImVec2 线段开始, ImVec2 线段结束, ImVec4 RGBA, 线粗)
+DrawText(const char* label, float size, ImVec2 位置, ImVec4 RGBA)
+
+}
+数据=
+{
+更新()
+}
+km=
+{
+	延迟(time)
+    相对移动(x,y)
+    左键(1)--0松开，1按下
+    中键(1)
+    右键(1)
+    按下(33)
+    弹起(33)
+    滚轮(1)
+	解除所有屏蔽(1)--1屏蔽,0解除
+	屏蔽左键(1)
+    屏蔽右键(1)
+	屏蔽X(1)
+    屏蔽Y(1)
+	屏蔽滚轮(1)
+	屏蔽键(33)
+    解除键(33)
+	是否按下(33)
+	获取时间()
+	寻找文本(字符串,被寻找的字符串)
+	Md5(str)
+	Post(网址,内容)
+}
+
+	
+	
